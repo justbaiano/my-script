@@ -1,0 +1,246 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Infinite Item Simulator Script", HidePremium = false, SaveConfig = true, ConfigFolder = "Project Ascenson"})
+
+_G.autoTap = true
+_G.test = true
+function autoTap()
+while _G.autoTap == true do
+game:GetService("ReplicatedStorage").Functions.RollRemoteFunction:InvokeServer()
+wait(0.0000000000000000000000000000000000000001)
+end
+end
+
+
+local Tab = Window:MakeTab({
+	Name = "Farming",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "Auto Break Block",
+	Default = false,
+	Callback = function(Value)
+_G.autoTap = Value
+autoTap()
+	end    
+
+})
+Tab:AddButton({
+	Name = "Sell Weapon",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-61.918335, 3.62925982, -192.595474, 0.268440455, -3.14292272e-08, 0.963296294, 2.49142751e-08, 1, 2.56839225e-08, -0.963296294, 1.71052239e-08, 0.268440455)
+  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end 
+})
+Tab:AddButton({
+	Name = "upgrade luck",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-62.7439461, 3.62899494, -178.872849, 0.127679929, 2.60223114e-08, 0.991815448, -2.57668482e-08, 1, -2.29199912e-08, -0.991815448, -2.26295338e-08, 0.127679929)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "upgrade BP Bonus",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-61.7663918, 3.62901092, -168.298904, -0.88024044, 3.33557382e-09, 0.474527955, 4.81131046e-09, 1, 1.89564453e-09, -0.474527955, 3.95172428e-09, -0.88024044)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "upgrade damage",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-61.4593506, 3.62901735, -158.290588, 3.83277484e-06, -1.82599429e-08, 1, 8.46175841e-09, 1, 1.82599109e-08, -1, 8.46168824e-09, 3.83277484e-06)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "upgrade Block Level",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-61.6260452, 3.62925506, -147.739578, -0.526447415, -9.53067811e-08, 0.850207686, -1.79528143e-08, 1, 1.00981879e-07, -0.850207686, 3.78980296e-08, -0.526447415)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "upgrade all + sell",
+	Callback = function()
+      	      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-61.918335, 3.62925982, -192.595474, 0.268440455, -3.14292272e-08, 0.963296294, 2.49142751e-08, 1, 2.56839225e-08, -0.963296294, 1.71052239e-08, 0.268440455)
+  	   wait(0.7)
+  	   	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-62.7439461, 3.62899494, -178.872849, 0.127679929, 2.60223114e-08, 0.991815448, -2.57668482e-08, 1, -2.29199912e-08, -0.991815448, -2.26295338e-08, 0.127679929)
+  	   	  wait(0.7)
+  	  	   	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-61.4593506, 3.62901735, -158.290588, 3.83277484e-06, -1.82599429e-08, 1, 8.46175841e-09, 1, 1.82599109e-08, -1, 8.46168824e-09, 3.83277484e-06)
+  	  	     wait(0.7)
+  	  	     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-61.7663918, 3.62901092, -168.298904, -0.88024044, 3.33557382e-09, 0.474527955, 4.81131046e-09, 1, 1.89564453e-09, -0.474527955, 3.95172428e-09, -0.88024044)
+  	  	       wait(0.7)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-61.6260452, 3.62925506, -147.739578, -0.526447415, -9.53067811e-08, 0.850207686, -1.79528143e-08, 1, 1.00981879e-07, -0.850207686, 3.78980296e-08, -0.526447415)
+  	  	   wait(0.7)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "prestige stuff",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "prestige",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-47.7920685, 8.48959541, -295.468323, 0.874584198, 8.23319795e-08, 0.484873682, -4.29215383e-08, 1, -9.23817538e-08, -0.484873682, 5.99840959e-08, 0.874584198)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Upgrade Luck Bonus",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-60.0984154, 8.48958015, -288.641785, -0.482826293, -9.29962596e-09, 0.87571615, 6.469699e-09, 1, 1.41865222e-08, -0.87571615, 1.25152457e-08, -0.482826293)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "Upgrade PP Bonus",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-69.1300201, 8.48957348, -283.635376, -0.484790802, 6.3986235e-08, 0.874630153, -4.45145503e-08, 1, -9.78316166e-08, -0.874630153, -8.63616307e-08, -0.484790802)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "Upgrade BP Bonus",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-77.5567856, 8.48958015, -279.642365, -0.437331587, 5.62424489e-08, 0.899300337, -3.04389829e-08, 1, -7.73427686e-08, -0.899300337, -6.11982216e-08, -0.437331587)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Rebirth Shop",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "upgrade Luck Bonus",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(121.910522, -29.8279934, -312.70639, 0.723739982, -5.52771269e-08, 0.690072775, 7.05820202e-09, 1, 7.27007716e-08, -0.690072775, -4.77457824e-08, 0.723739982)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "upgrade RP Bonus",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(118.693474, -29.8280067, -321.935272, 0.70458585, -1.90877056e-08, -0.709618747, 3.3535084e-08, 1, 6.39870246e-09, 0.709618747, -2.83055588e-08, 0.70458585)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "upgrade PP Bonus",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(112.12822, -29.8279991, -329.733582, 0.388975531, 6.37770299e-08, 0.921248078, -6.75106193e-08, 1, -4.07241565e-08, -0.921248078, -4.63533247e-08, 0.388975531)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "upgrade BP Bonus",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107.925568, -29.82798, -337.617737, 0.980339348, -6.60494948e-08, 0.197318956, 8.60046043e-08, 1, -9.25618338e-08, -0.197318956, 1.07712346e-07, 0.980339348)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "Do all",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(121.910522, -29.8279934, -312.70639, 0.723739982, -5.52771269e-08, 0.690072775, 7.05820202e-09, 1, 7.27007716e-08, -0.690072775, -4.77457824e-08, 0.723739982)
+	wait(0.6)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(112.12822, -29.8279991, -329.733582, 0.388975531, 6.37770299e-08, 0.921248078, -6.75106193e-08, 1, -4.07241565e-08, -0.921248078, -4.63533247e-08, 0.388975531)
+  	  	   wait(0.6)
+  	  	   	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(118.693474, -29.8280067, -321.935272, 0.70458585, -1.90877056e-08, -0.709618747, 3.3535084e-08, 1, 6.39870246e-09, 0.709618747, -2.83055588e-08, 0.70458585)
+  	  	   wait(0.6)
+  	  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(118.693474, -29.8280067, -321.935272, 0.70458585, -1.90877056e-08, -0.709618747, 3.3535084e-08, 1, 6.39870246e-09, 0.709618747, -2.83055588e-08, 0.70458585)
+  	  	   wait(0.6)
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107.925568, -29.82798, -337.617737, 0.980339348, -6.60494948e-08, 0.197318956, 8.60046043e-08, 1, -9.25618338e-08, -0.197318956, 1.07712346e-07, 0.980339348)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "ascension Shop",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Ascension",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(261.437836, 29.2230549, -225.459152, 0.14384146, -3.14106146e-08, -0.989600718, 6.59894681e-08, 1, -2.21489245e-08, 0.989600718, -6.21172944e-08, 0.14384146)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "Upgrade 1",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(251.641251, 29.223053, -235.031982, -0.615678191, -8.00342335e-08, 0.787997663, -5.45535599e-08, 1, 5.89428097e-08, -0.787997663, -6.6982766e-09, -0.615678191)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "Upgrade 2",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(244.093658, 29.223032, -241.82254, 0.659439266, -5.01436581e-08, 0.75175786, 2.33618636e-08, 1, 4.62089318e-08, -0.75175786, -1.29095188e-08, 0.659439266)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "Upgrade 3",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(236.296173, 29.2230358, -248.843231, 0.669052541, 5.48234595e-08, 0.743215084, -2.93014253e-08, 1, -4.73877151e-08, -0.743215084, 9.92760896e-09, 0.669052541)
+  	  	   wait(0.6)
+  	  	   
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "Upgrade 4",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(228.936722, 29.2230358, -254.717789, 0.37199071, 3.08145935e-08, 0.928236425, -6.43087095e-09, 1, -3.06197521e-08, -0.928236425, 5.42089484e-09, 0.37199071)
+  	  	   wait(0.6)   
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+Tab:AddButton({
+	Name = "Do all",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(251.641251, 29.223053, -235.031982, -0.615678191, -8.00342335e-08, 0.787997663, -5.45535599e-08, 1, 5.89428097e-08, -0.787997663, -6.6982766e-09, -0.615678191)
+  	  	   wait(0.6)
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(228.936722, 29.2230358, -254.717789, 0.37199071, 3.08145935e-08, 0.928236425, -6.43087095e-09, 1, -3.06197521e-08, -0.928236425, 5.42089484e-09, 0.37199071)
+  	  	   wait(0.6)
+  	  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(244.093658, 29.223032, -241.82254, 0.659439266, -5.01436581e-08, 0.75175786, 2.33618636e-08, 1, 4.62089318e-08, -0.75175786, -1.29095188e-08, 0.659439266)
+  	  	   wait(0.6)
+  	  	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(236.296173, 29.2230358, -248.843231, 0.669052541, 5.48234595e-08, 0.743215084, -2.93014253e-08, 1, -4.73877151e-08, -0.743215084, 9.92760896e-09, 0.669052541)
+  	  	   wait(0.6)
+  	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.80970478, 3.88849807, -173.010498, -0.050376948, -3.41204434e-08, -0.998730302, -8.0386986e-09, 1, -3.37583401e-08, 0.998730302, 6.3278498e-09, -0.050376948)
+  	end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+--[[
+Name = <string> - The name of the toggle.
+Default = <bool> - The default value of the toggle.
+Callback = <function> - The function of the toggle.
+]]
+OrionLib:Init()
